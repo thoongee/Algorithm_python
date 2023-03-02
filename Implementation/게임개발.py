@@ -28,6 +28,7 @@ def turn_left(d):
 check = True
 
 while (check):
+
   d = turn_left(d)
   new_x = x + dx[d]
   new_y = y + dy[d]
