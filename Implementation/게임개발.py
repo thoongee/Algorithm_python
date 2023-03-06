@@ -34,5 +34,6 @@ while (check):
   new_y = y + dy[d]
 
   if game_map[new_x][new_y] == 0:
+
     x = new_x
     y = new_y
