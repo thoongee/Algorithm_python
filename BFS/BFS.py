@@ -15,6 +15,7 @@ def bfs(graph, start, visited):
         queue.append(i)
         visited[i] = True
 
+
 # 각 노드가 연결된 정보를 리스트 자료형으로 표현(=DFS)
 # ex) 1번 노드는 2,3,8번 노드와 연결되어 있음
 graph = [[], [2, 3, 8], [1, 7], [1, 4, 5], [3, 5], [3, 4], [7], [2, 6, 8],
