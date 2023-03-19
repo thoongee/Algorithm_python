@@ -26,14 +26,6 @@ class Solution {
      
     }
 
- /* Node is defined as :
- class Node 
-    int data;
-    Node left;
-    Node right;
-    
-    */
-
 	public static Node insert(Node root,int data) {
 
     	
