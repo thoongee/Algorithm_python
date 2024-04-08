@@ -1,14 +1,12 @@
 import sys
 input = sys.stdin.readline
 
-# 이와 같이 함수를 사용하는 경우, 재사용성, 가독성, 유지보수성 측면에서 장점이 있음
 
 def push(stack,x):
     stack.append(x)
-    # return stack 할 필요 없음 : 리스트는 가변 객체이므로, 함수 내에서 변경하면 원본 리스트도 변경됌
 
 def pop(stack):
-    if not stack: ## list가 비었는지 확인
+    if not stack: 
         print(-1)
     else:
         print(stack.pop())
@@ -29,7 +27,7 @@ def top(stack):
         print(stack[-1])
 
 
-n = int(input().strip()) # strip() : 마지막 개행문자 제거
+n = int(input().strip()) 
 stack = []
 
 for _ in range(n):

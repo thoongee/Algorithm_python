@@ -5,25 +5,13 @@ input = sys.stdin.readline
 
 T = int(input())
 
-for i in range(T):
-    stack = []
-    ps_group = input().strip()
-    for ps in ps_group:
-        if stack: # stack에 무언가 있다면
-            if ps =='(':
-                stack.append(ps)
-            elif ps==')':
-                if stack[-1]=='(': # stack 제일 끝에 ( 가 있다면
-                    stack.pop()
-                else: # stack 제일 끝에 )가 있다면
-                    stack.append(ps)
-
-        else: # stack이 비어있다면
-            stack.append(ps)
-
-    if stack: # stack에 괄호가 남아있다면
-        print("NO")
+for _ in range(T):
+    ps = input().strip()
+    while '()' in ps:
+        ps.replace('()','')
+    
+    if ps: # ps가 비어있지 않다면
+        print('NO')
     else:
-        print("YES")
-
-# sum 
+        print('YES')
+        
