@@ -74,7 +74,7 @@ print(stack[::-1]) # 최상단 원소부터 출력
 
 ### **정의**
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c572571b-8a19-4c28-929f-c23789a58601/d0e40dc7-14f6-4f90-bf78-921a9b0e95f5/Untitled.png)
+<p align="center"><img src="https://github.com/thoongee/Algorithm_python/assets/94193480/cd34b6fd-ccc5-4acf-8165-d5396dcb1a517" width="40%">
 
 - Single linked list : 데이터 요소의 선형 집합으로, 각 요소는 데이터와 다음 요소를 가리키는 포인터를 포함.
     - 데이터 요소(노드): 메모리 내에 연속적으로 위치할 필요가 없으며, 포인터를 통해 순서대로 연결.
