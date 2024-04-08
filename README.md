@@ -6,3 +6,4 @@
     - stack
     - queue
     - deque
+    - linked list
