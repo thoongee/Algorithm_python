@@ -10,7 +10,7 @@ for _ in range(T):
     while '()' in ps:
         ps.replace('()','')
     
-    if ps: # ps가 비어있지 않다면
+    if ps: # ps가 비어있다면
         print('NO')
     else:
         print('YES')
