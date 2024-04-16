@@ -4,6 +4,7 @@ lan = [int(sys.stdin.readline()) for _ in range(k)]
 start = 1
 end = max(lan)
 
+
 while start <= end: # start > end 가 되기 전까지만 실행됌. 
     mid = (start + end) // 2 
     cnt = 0 # 랜선 수
@@ -14,5 +15,6 @@ while start <= end: # start > end 가 되기 전까지만 실행됌.
         start = mid + 1
     else:
         end = mid - 1
+    
 
 print(end)
