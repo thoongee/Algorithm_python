@@ -6,21 +6,20 @@
     - 마치 표처럼!
     - 연결되어 있지않은 노드끼리는 무한의 값(99999999)을 가지고 있다고 작성함
     - 모든 관계를 저장하므로, 노드 개수가 많을수록 메모리 낭비
-        
-        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c572571b-8a19-4c28-929f-c23789a58601/0f2a42b4-8646-4d7e-9e82-b4c3e1108841/Untitled.png)
-        
-        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c572571b-8a19-4c28-929f-c23789a58601/1a26d773-f318-4825-ad20-8510c9f570a6/Untitled.png)
+<p align="center">
+  <img src="https://github.com/thoongee/algorithm-python/assets/94193480/c8a08d48-3396-440c-8cc1-c309b40c05fc" alt="Image 1" width="400"/>
+  <img src="https://github.com/thoongee/algorithm-python/assets/94193480/e8bd33db-82c9-4534-94d1-2d4a065864b8" alt="Image 2" width="200"/>
+</p>
         
 2. 인접 리스트 : 리스트로 그래프의 연결관계를 표현하는 방식
     - 각 노드에 연결된 노드에 대한 정보를 차례대로 연결하여 저장
     - 연결된 정보만 저장하기 때문에 메모리 효율성 높음.
     - 연결된 정보를 하나씩 확인 → 특정 두 노드가 연결되어있는지에 대한 정보를 얻는 속도가 느림
     - 특정한 노드와 연결된 **모든 인접 노드를 순회해야 하는 경우**, 인접 리스트 방식이 인접 행렬 방식에 비해 메모리 공간의 낭비가 적다.
-    
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c572571b-8a19-4c28-929f-c23789a58601/5bf174b0-5570-457a-abee-c40d22313fd5/Untitled.png)
-    
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c572571b-8a19-4c28-929f-c23789a58601/06670d28-c074-4456-a57f-dfb8054bfddb/Untitled.png)
-    
+<p align="center">
+	<img src="https://github.com/thoongee/algorithm-python/assets/94193480/1f7b1993-79b3-4d18-934c-50d402fdc3eb" alt="Image 1" width="300"/>
+  	<img src="https://github.com/thoongee/algorithm-python/assets/94193480/9fae4c9b-fb61-4c7d-98ab-49e690d738f0" alt="Image 2" width="300"/>
+</p>
 
 ### 특징
 
@@ -30,10 +29,11 @@
 - 탐색 시간 복잡도: O(n)
 
 ### 동작 과정
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c572571b-8a19-4c28-929f-c23789a58601/46a646f4-af8b-4add-beae-be86f5b0a0ee/Untitled.png)
-
-### 예시 코드
+1. 탐색 시작 노드를 스택에 삽입하고 방문처리
+2. 스택의 최상단 노드에 방문하지 않은 인접 노드가 있으면 그 인접 노드를 스택에 넣고 방문 처리. 방문하지 않은 인접 노드가 없으면 스택에서 최상단 노드를 꺼냄
+3. 2번 과정을 더 이상 수행할 수 없을 때까지 반복
+	
+ ### 예시 코드
 
 ```python
 def dfs(graph, v, visited):
@@ -120,4 +120,4 @@ bfs(graph,1,visited)
 
 - 2차원 배열의 '탐색 문제'는 그래프 형태로 바꿔서 풀면 풀이가 쉽다
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c572571b-8a19-4c28-929f-c23789a58601/1687568b-51ad-4e9f-a298-412f39267ac4/Untitled.png)
+<p align="center"><img src="https://github.com/thoongee/algorithm-python/assets/94193480/ac7d4d27-47e0-4714-bb3b-5222d4b627c5" width="30%">
