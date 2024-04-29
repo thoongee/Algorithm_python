@@ -16,7 +16,7 @@ for i in range(1, n):
         else:
             up_left = dp[i - 1][j - 1]
         # 바로 위에서 내려오는 경우
-        if j == i:
+        if j == i: # 맨 오른쪽 == 바로 위가 없음. 왼쪽 위만 있음.
             up = 0
         else:
             up = dp[i - 1][j]
