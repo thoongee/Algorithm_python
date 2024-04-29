@@ -1,8 +1,3 @@
-# (1,1)에서 출발, (n,m) 도착
-# 도착지점까지 갈 수 있는 최소 칸의 수 구하기
-# 1이라고 적힌 칸만 이동 가능
-# (1,1) 지점에서부터 BFS를 수행하여 모든 노드의 값을 거리 정보로 넣으면 됨.
-
 from collections import deque
 import sys
 input = sys.stdin.readline

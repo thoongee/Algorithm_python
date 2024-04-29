@@ -10,7 +10,6 @@ d[3] = 4
 
 for i in range(T):
   n = int(input().rstrip())
-  
   for j in range(4,n+1):
     d[j] = d[j-1]+d[j-2]+d[j-3]
 
